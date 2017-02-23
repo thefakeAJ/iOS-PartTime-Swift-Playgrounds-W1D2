@@ -47,7 +47,13 @@ if someThing == otherThing {
 //:
 //: Now see if you can make an `if`/`else` statement that prints out a grammatically correct description of how many bicycles we have. I.e. "There is 1 bicycle" or "There are 100 bicycles".
 
-bicycleCount = 1
+bicycleCount = 2
+
+if bicycleCount == 1 {
+    print ("There is \(bicycleCount) bicycle")
+} else {
+    print ("There are \(bicycleCount) bicycles")
+}
 
 
 
@@ -58,6 +64,14 @@ bicycleCount = 1
 
 bicycleCount = 0
 
+if bicycleCount == 1 {
+    print ("There is \(bicycleCount) bicycle")
+} else if bicycleCount == 0 {
+    print ("There are zero bicycles")
+}
+else {
+    print ("There are \(bicycleCount) bicycles")
+}
 
 
 
@@ -66,7 +80,13 @@ bicycleCount = 0
 //: Make an if/else block that prints "I think so!" if `inputString` ends in "?", if the string ends in any other character then print "You don't say!"
 //: If you can't figure out how to tell if a string ends in ?, try googling something like "swift string ends with character".
 
-var inputString = "Do you like bicycles?"
+var inputString = "I like bicycles."
+
+if inputString.hasSuffix("?") {
+    print ("I think so!")
+} else {
+    print ("You don't say!")
+}
 
 
 
